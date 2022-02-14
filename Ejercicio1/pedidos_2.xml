@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sucursales SYSTEM "pedidos.dtd">
-<sucursales>
+<sucursales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="pedidos.xsd">
     <sucursal codigo ="A0000001">
         <nombreTrabajador>Alberto Marquez</nombreTrabajador>
         <fechaPedido>2022/10/08</fechaPedido>

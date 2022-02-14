@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="sucursales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="sucursal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sucursal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombreTrabajador"/>
+        <xs:element name="fechaPedido"/>
+        <xs:element name="observacionesPedidos"/>
+        <xs:element maxOccurs="unbounded" ref="pedido"/>
+      </xs:sequence>
+      <xs:attribute name="codigo" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombreTrabajador" type="xs:string"/>
+  <xs:element name="fechaPedido" type="xs:string"/>
+  <xs:element name="observacionesPedidos" type="xs:NCName"/>
+  <xs:element name="pedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="NumeroUnidades"/>
+        <xs:element ref="precio"/>
+        <xs:element ref="observaciones"/>
+        <xs:element ref="plazoRevision"/>
+      </xs:sequence>
+      <xs:attribute name="codigo" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NumeroUnidades" type="xs:integer"/>
+  <xs:element name="precio" type="xs:integer"/>
+  <xs:element name="observaciones" type="xs:string"/>
+  <xs:element name="plazoRevision" type="xs:integer"/>
+</xs:schema>

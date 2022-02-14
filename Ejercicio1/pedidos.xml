@@ -1,0 +1,31 @@
+
+<sucursales>
+    <sucursal codigo ="A0000001">
+        <nombreTrabajador>Alberto Marquez</nombreTrabajador>
+        <fechaPedido>2022/10/08</fechaPedido>
+        <observacionesPedidos>Urgente</observacionesPedidos>
+        <pedido codigo = "ABC-001">
+            <NumeroUnidades>1</NumeroUnidades>
+            <precio>12</precio>
+            <observaciones>Fragil</observaciones>
+            <plazoRevision>30</plazoRevision>
+        </pedido>
+        <pedido codigo = "ABC-002">
+            <NumeroUnidades>5</NumeroUnidades>
+            <precio>5</precio>
+            <observaciones>Pesa mucho</observaciones>
+            <plazoRevision>15</plazoRevision>
+        </pedido>
+    </sucursal>
+    <sucursal codigo ="B0000121">
+        <nombreTrabajador>Diego Moreno</nombreTrabajador>
+        <fechaPedido>2022/11/18</fechaPedido>
+        <observacionesPedidos>Incompleto</observacionesPedidos>
+        <pedido codigo = "ACD-171">
+            <NumeroUnidades>9</NumeroUnidades>
+            <precio>18</precio>
+            <observaciones>Peligroso</observaciones>
+            <plazoRevision>10</plazoRevision>
+        </pedido>
+    </sucursal>
+</sucursales>
